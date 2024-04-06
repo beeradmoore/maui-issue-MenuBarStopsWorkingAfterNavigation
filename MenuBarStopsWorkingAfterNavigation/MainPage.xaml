@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuBarStopsWorkingAfterNavigation.MainPage"
+             xmlns:local="clr-namespace:MenuBarStopsWorkingAfterNavigation"
+             x:DataType="local:MainPageModel">
+	
+	
+	<ContentPage.MenuBarItems>
+		<MenuBarItem Text="Custom Menu">
+			<MenuFlyoutItem Text="Custom Item" Command="{Binding MenuItemCommand}" />
+		</MenuBarItem>
+	</ContentPage.MenuBarItems>
+		
+	<Grid>
+		<Button Text="Go To Other Page" Command="{Binding GoToOtherPageCommand}" HorizontalOptions="Center" VerticalOptions="Center" />
+	</Grid>
+
+</ContentPage>
